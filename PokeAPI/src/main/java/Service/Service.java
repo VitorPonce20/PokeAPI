@@ -7,9 +7,9 @@ import static io.restassured.RestAssured.when;
 
 public class Service {
 
-    public static void post(){
+    public static void get(){
         given().baseUri("https://pokeapi.co").
-        when().get("/api/v2/pokemon/ditto").then().log().all();
+        when().get("/api/v2/pokemon/ditto").then().statusCode(200).log().all();
     }
 }
 
