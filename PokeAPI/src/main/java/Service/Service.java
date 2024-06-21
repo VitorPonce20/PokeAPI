@@ -1,15 +1,18 @@
 package Service;
 
+import Main.Endpoint;
 import io.restassured.RestAssured;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.when;
 
 public class Service {
+    Endpoint endpoint = new Endpoint();
 
-    public static void get(){
+    public void get(){
+
         given().baseUri("https://pokeapi.co").
-        when().get("/api/v2/pokemon/ditto").then().statusCode(200).log().all();
+        when().get(endpoint.ditto()).then().statusCode(200).log().all();
     }
 }
 
