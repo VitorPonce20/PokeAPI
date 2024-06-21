@@ -9,11 +9,18 @@ import static io.restassured.RestAssured.when;
 public class Service {
     Endpoint endpoint = new Endpoint();
 
-    public void get(){
+    public void ditto(){
 
         given().baseUri("https://pokeapi.co").
         when().get(endpoint.ditto()).then().statusCode(200).log().all();
     }
+
+    public void charmander(){
+        given().baseUri("https://pokeapi.co").
+                when().get(endpoint.charmander()).then().statusCode(200).log().all();
+    }
+
+
 }
 
 
