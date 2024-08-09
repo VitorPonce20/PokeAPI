@@ -20,6 +20,21 @@ public class Service {
                 when().get(endpoint.charmander()).then().statusCode(200).log().all();
     }
 
+    public void squirtle(){
+        given().baseUri("https://pokeapi.co").
+                when().get(endpoint.charmander()).then().statusCode(200).log().all();
+    }
+
+    public void Wartortle (){
+        given().baseUri("https://pokeapi.co").
+                when().get(endpoint.charmander()).then().statusCode(200).log().all();
+    }
+
+    public void Blastoise (){
+        given().baseUri("https://pokeapi.co").
+                when().get(endpoint.charmander()).then().statusCode(200).log().all();
+    }
+
 
 }
 
