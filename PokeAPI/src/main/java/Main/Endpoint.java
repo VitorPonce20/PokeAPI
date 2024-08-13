@@ -1,12 +1,25 @@
 package Main;
 
 public class Endpoint {
+
     private String endpoint = null;
+    private final String BASEURI = "https://pokeapi.co/api/v2/pokemon/";
     public String ditto(){
-       return this.endpoint = "/api/v2/pokemon/ditto";
+        return  endpoint = BASEURI + "ditto";
+    }
+    public String bulbassauro(){
+        return  endpoint = BASEURI + "bulbasaur";
     }
 
-    public String charmander(){
-        return this.endpoint = "/api/v2/pokemon/charmander";
+    public String charmander() {
+        return endpoint = BASEURI + "charmander";
+    }
+
+    public String charizard() {
+        return endpoint = BASEURI + "charizard";
+    }
+
+    public String charmeleon() {
+        return endpoint = BASEURI + "charmeleon";
     }
 }
