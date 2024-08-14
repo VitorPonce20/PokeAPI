@@ -13,7 +13,6 @@ public class Service {
     private String name;
     private int id;
 
-<<<<<<< HEAD
     public void ditto(){
         given().baseUri("https://pokeapi.co").
         when().get(endpoint.ditto()).then().statusCode(200);

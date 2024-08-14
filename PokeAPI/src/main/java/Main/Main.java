@@ -8,7 +8,6 @@ import Service.Poke;
 public class Main {
     public static void main(String[] args){
         System.out.println("Hello World");
-//        Service service = new Service();
         Poke poke = new Poke();
         Endpoint endpoint = new Endpoint();
 
