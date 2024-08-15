@@ -10,6 +10,10 @@ public class Poke {
         private String name = null;
         private Response response;
 
+        public int getID(){
+            return id;
+        }
+
         public void getPoke(String poke){
             System.out.println("endpoint: " + poke);
             response = when().get(poke);

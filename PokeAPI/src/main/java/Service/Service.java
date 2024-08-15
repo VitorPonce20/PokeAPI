@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.when;
 public class Service {
     Endpoint endpoint = new Endpoint();
     private String name;
-    private int id;
+    public int id;
 
     public void ditto(){
         given().baseUri("https://pokeapi.co").
@@ -25,11 +25,11 @@ public class Service {
         given().baseUri("https://pokeapi.co").
                 when().get(endpoint.charmander()).then().statusCode(200);
     }
-    public void Wartortle (){
+    public void wartortle (){
         given().baseUri("https://pokeapi.co").
                 when().get(endpoint.charmander()).then().statusCode(200);
     }
-    public void Blastoise (){
+    public void blastoise (){
         given().baseUri("https://pokeapi.co").
                 when().get(endpoint.charmander()).then().statusCode(200);
     }
