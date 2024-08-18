@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.when;
 public class Service {
     Endpoint endpoint = new Endpoint();
     private String name;
-    public int id;
+    public int id = 20;
 
     public void ditto(){
         given().baseUri("https://pokeapi.co").
