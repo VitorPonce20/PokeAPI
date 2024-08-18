@@ -23,6 +23,8 @@ public class Poke {
             System.out.println("poke id : " + id);
             System.out.println("poke name : " + name);
 
+
+
         }
     }
 
