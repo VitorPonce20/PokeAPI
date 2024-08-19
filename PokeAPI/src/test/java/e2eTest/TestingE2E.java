@@ -32,6 +32,7 @@ public class TestingE2E {
 
         response = poke.getPoke(endpoint.charmander());
         Assert.assertEquals(poke.getID(), 4);
+        response.then().statusCode(200);
 
         JsonPath json = response.jsonPath();
 
