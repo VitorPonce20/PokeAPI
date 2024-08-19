@@ -4,9 +4,7 @@ public class Endpoint {
 
     private String endpoint = null;
     private final String BASEURI = "https://pokeapi.co/api/v2/pokemon/";
-    public String ditto(){
-        return  endpoint = BASEURI + "ditto";
-    }
+    public String ditto(){ return  endpoint = BASEURI + "ditto"; }
     public String bulbassauro(){
         return  endpoint = BASEURI + "bulbasaur";
     }
@@ -22,4 +20,6 @@ public class Endpoint {
     public String charmeleon() {
         return endpoint = BASEURI + "charmeleon";
     }
+
+    public String squirtle() { return endpoint = BASEURI + "squirtle"; }
 }

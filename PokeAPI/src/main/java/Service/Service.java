@@ -17,22 +17,22 @@ public class Service {
         given().baseUri("https://pokeapi.co").
         when().get(endpoint.ditto()).then().statusCode(200);
     }
-    public void charmander(){
-        given().baseUri("https://pokeapi.co").
-                when().get(endpoint.charmander()).then().statusCode(200);
-    }
-    public void squirtle(){
-        given().baseUri("https://pokeapi.co").
-                when().get(endpoint.charmander()).then().statusCode(200);
-    }
-    public void wartortle (){
-        given().baseUri("https://pokeapi.co").
-                when().get(endpoint.charmander()).then().statusCode(200);
-    }
-    public void blastoise (){
-        given().baseUri("https://pokeapi.co").
-                when().get(endpoint.charmander()).then().statusCode(200);
-    }
+//    public void charmander(){
+//        given().baseUri("https://pokeapi.co").
+//                when().get(endpoint.charmander()).then().statusCode(200);
+//    }
+//    public void squirtle(){
+//        given().baseUri("https://pokeapi.co").
+//                when().get(endpoint.charmander()).then().statusCode(200);
+//    }
+//    public void wartortle (){
+//        given().baseUri("https://pokeapi.co").
+//                when().get(endpoint.charmander()).then().statusCode(200);
+//    }
+//    public void blastoise (){
+//        given().baseUri("https://pokeapi.co").
+//                when().get(endpoint.charmander()).then().statusCode(200);
+//    }
 
 }
 

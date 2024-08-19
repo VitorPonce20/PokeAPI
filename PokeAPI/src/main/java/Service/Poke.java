@@ -14,7 +14,7 @@ public class Poke {
             return id;
         }
 
-        public void getPoke(String poke){
+        public Response getPoke(String poke){
             System.out.println("endpoint: " + poke);
             response = when().get(poke);
             id = response.jsonPath().get("id");
@@ -23,6 +23,8 @@ public class Poke {
             System.out.println("poke id : " + id);
             System.out.println("poke name : " + name);
 
+
+            return response;
         }
     }
 
