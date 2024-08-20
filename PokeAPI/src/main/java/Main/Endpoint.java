@@ -22,4 +22,8 @@ public class Endpoint {
     }
 
     public String squirtle() { return endpoint = BASEURI + "squirtle"; }
+
+    public String ivysaur() { return endpoint = BASEURI + "ivysaur"; }
+
+    public String venusaur() { return endpoint = BASEURI + "venusaur"; }
 }

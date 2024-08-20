@@ -52,6 +52,17 @@ public class TestingE2E {
         id = json.get("id");
         System.out.println(id);
     }
+    @Test
+    public void seedTest(){
+        poke.getPoke(endpoint.bulbassauro());
+        Assert.assertEquals(poke.getID(),1);
+
+        poke.getPoke(endpoint.ivysaur());
+        Assert.assertEquals(poke.getID(), 2);
+
+        poke.getPoke(endpoint.venusaur());
+        Assert.assertEquals(poke.getID(), 3);
+    }
 
 
 }
