@@ -26,31 +26,27 @@ public class TestingE2E {
     }
     @Test
     public void fireTest(){
-        int id;
-        String name;
 
-
-        response = poke.getPoke(endpoint.charmander());
+        poke.getPoke(endpoint.charmander()).then().statusCode(200);
         Assert.assertEquals(poke.getID(), 4);
-        response.then().statusCode(200);
 
-        JsonPath json = response.jsonPath();
-
-        json.get("id");
-        id = json.get("id");
-        System.out.println(id);
-
-        response = poke.getPoke(endpoint.charmeleon());
+        poke.getPoke(endpoint.charmeleon()).then().statusCode(200);
         Assert.assertEquals(poke.getID(), 5);
-        json.get("id");
-        id = json.get("id");
-        System.out.println(id);
 
-        response = poke.getPoke(endpoint.charizard());
+        poke.getPoke(endpoint.charizard()).then().statusCode(200);
         Assert.assertEquals(poke.getID(), 6);
-        json.get("id");
-        id = json.get("id");
-        System.out.println(id);
+
+    }
+    @Test
+    public void seedTest(){
+        poke.getPoke(endpoint.bulbassauro());
+        Assert.assertEquals(poke.getID(),1);
+
+        poke.getPoke(endpoint.ivysaur());
+        Assert.assertEquals(poke.getID(), 2);
+
+        poke.getPoke(endpoint.venusaur());
+        Assert.assertEquals(poke.getID(), 3);
     }
 
 
