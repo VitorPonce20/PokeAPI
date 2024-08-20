@@ -1,7 +1,7 @@
 # PokeAPI
 REST API Testing
 
-Documentation about how to test API's using REST-assured. Here we will see how to do a request and validate the response usin a GET request to obtain data from the server (about pokemons as example :D ) and after handle json body responses using JsonPath.
+Documentation about how to test API's using REST-assured. Here we will see how to do a request and validate the response using a GET request to obtain data from the server (about pokemons as example :D ) and after handle json body responses using JsonPath.
 <h2>Installing</h2>
 install java and maven
 import rest-assured dependencies in pom.xml\
