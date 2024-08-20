@@ -7,7 +7,6 @@ import Service.Poke;
 
 public class Main {
     public static void main(String[] args){
-        System.out.println("Hello World");
         Poke poke = new Poke();
         Endpoint endpoint = new Endpoint();
 
@@ -16,7 +15,5 @@ public class Main {
         poke.getPoke(endpoint.charmeleon());
         poke.getPoke(endpoint.charizard());
         poke.getPoke(endpoint.bulbassauro());
-
-
     };
 }
