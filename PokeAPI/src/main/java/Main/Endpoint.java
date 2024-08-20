@@ -26,4 +26,10 @@ public class Endpoint {
     public String ivysaur() { return endpoint = BASEURI + "ivysaur"; }
 
     public String venusaur() { return endpoint = BASEURI + "venusaur"; }
+
+    public String pikachu() { return endpoint = BASEURI + "pikachu";}
+    public String raichu() { return endpoint = BASEURI + "raichu";}
+
+    public String electabuzz() { return endpoint = BASEURI + "electabuzz";}
+
 }
