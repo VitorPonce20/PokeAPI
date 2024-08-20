@@ -46,5 +46,17 @@ public class TestingE2E {
         Assert.assertEquals(poke.getID(), 3);
     }
 
+    @Test
+    public void eletricTest(){
+        poke.getPoke(endpoint.pikachu());
+        Assert.assertEquals(poke.getID(),25);
+
+        poke.getPoke(endpoint.raichu());
+        Assert.assertEquals(poke.getID(), 26);
+
+        poke.getPoke(endpoint.electabuzz());
+        Assert.assertEquals(poke.getID(), 125);
+    }
+
 
 }
