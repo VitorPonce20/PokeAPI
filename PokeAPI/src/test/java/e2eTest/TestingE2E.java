@@ -1,9 +1,6 @@
 package e2eTest;
 
-import Main.Endpoint;
-import Service.Service;
-import groovy.json.JsonToken;
-import io.restassured.path.json.JsonPath;
+import Endpoint.Endpoint;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package Main;
+package Endpoint;
 
 public class Endpoint {
 
