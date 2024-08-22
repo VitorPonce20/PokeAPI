@@ -58,5 +58,16 @@ public class TestingE2E {
         Assert.assertEquals(poke.getID(), 125);
     }
 
+    @Test
+    public void legendaryTest(){
+        poke.getPoke(endpoint.zapdus());
+        Assert.assertEquals(poke.getID(),25);
+
+        poke.getPoke(endpoint.articuno());
+        Assert.assertEquals(poke.getID(), 26);
+
+        poke.getPoke(endpoint.moltres());
+        Assert.assertEquals(poke.getID(), 125);
+    }
 
 }
