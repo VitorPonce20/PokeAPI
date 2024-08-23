@@ -60,14 +60,14 @@ public class TestingE2E {
 
     @Test
     public void legendaryTest(){
-        poke.getPoke(endpoint.zapdus());
-        Assert.assertEquals(poke.getID(),25);
+        poke.getPoke(endpoint.zapdos());
+        Assert.assertEquals(poke.getID(),145);
 
         poke.getPoke(endpoint.articuno());
-        Assert.assertEquals(poke.getID(), 26);
+        Assert.assertEquals(poke.getID(), 144);
 
         poke.getPoke(endpoint.moltres());
-        Assert.assertEquals(poke.getID(), 125);
+        Assert.assertEquals(poke.getID(), 146);
     }
 
 }

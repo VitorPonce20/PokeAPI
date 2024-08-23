@@ -32,21 +32,9 @@ public class Endpoint {
 
     public String electabuzz() { return endpoint = BASEURI + "electabuzz";}
 
-    public String zapdus() {
+    public String zapdos() { return endpoint = BASEURI + "zapdos"; }
 
+    public String articuno() { return endpoint = BASEURI + "articuno"; }
 
-        return null;
-    }
-
-    public String articuno() {
-
-
-        return null;
-    }
-
-    public int moltres() {
-
-
-        return 0;
-    }
+    public String moltres() { return endpoint = BASEURI + "moltres"; }
 }
