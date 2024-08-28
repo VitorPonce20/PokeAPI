@@ -4,7 +4,9 @@ public class Endpoint {
 
     private String endpoint = null;
     private final String BASEURI = "https://pokeapi.co/api/v2/pokemon/";
-    public String ditto(){ return  endpoint = BASEURI + "ditto"; }
+    public String generateEndPoint(String poke){
+        return  endpoint = BASEURI + poke;
+    }
     public String bulbassauro(){
         return  endpoint = BASEURI + "bulbasaur";
     }

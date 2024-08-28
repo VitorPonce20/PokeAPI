@@ -3,9 +3,8 @@ package Service;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.when;
 
-public class Poke {
+public class PokemonGetService {
 
         private int id = 0;
         private String name = null;
@@ -13,6 +12,10 @@ public class Poke {
 
         public int getID(){
             return id;
+        }
+
+        public String getName(){
+            return name;
         }
 
         public Response getPoke(String poke){

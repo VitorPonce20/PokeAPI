@@ -4,10 +4,10 @@ import Endpoint.Endpoint;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import Service.Poke;
+import Service.PokemonGetService;
 
 public class TestingE2E {
-    Poke poke = new Poke();
+    PokemonGetService poke = new PokemonGetService();
     Endpoint endpoint = new Endpoint();
     Response response;
 
@@ -66,8 +66,14 @@ public class TestingE2E {
         poke.getPoke(endpoint.articuno());
         Assert.assertEquals(poke.getID(), 144);
 
-        poke.getPoke(endpoint.moltres());
+        poke.getPoke(endpoint.generateEndPoint("moltres"));
         Assert.assertEquals(poke.getID(), 146);
     }
 
-}
+    @Test
+    public void dragonTest(){
+        poke.getPoke(endpoint.generateEndPoint("dragonite"));
+    }
+
+
+    }
