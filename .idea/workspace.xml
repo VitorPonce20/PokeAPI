@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82aa43f4-7697-4aa1-8c4c-1b468243997a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/PokeAPI/src/main/java/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/PokeAPI/src/main/java/Service/Service.java" afterDir="false" />
-    </list>
+    <list default="true" id="82aa43f4-7697-4aa1-8c4c-1b468243997a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,9 +13,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2kOupfMAtuY3vbwm5E0Es1eVz3r" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,7 +26,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Vitor/Documents/Projetos/POKE/PokeAPI",
+    "last_opened_file_path": "C:/Users/Vitor/Documents/Projetos/poke api/e2e-maven-testing",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
