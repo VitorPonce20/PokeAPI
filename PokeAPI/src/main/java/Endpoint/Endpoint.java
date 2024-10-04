@@ -7,6 +7,11 @@ public class Endpoint {
     public String generateEndPoint(String poke){
         return  endpoint = BASEURI + poke;
     }
+
+    public String getBASEURI() {
+        return BASEURI;
+    }
+
     public String bulbassauro(){
         return  endpoint = BASEURI + "bulbasaur";
     }

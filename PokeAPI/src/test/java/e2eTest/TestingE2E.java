@@ -12,17 +12,19 @@ public class TestingE2E {
     Response response;
 
     @Test
-    public void charmanderTest(){
+    public void charmanderTest() {
         poke.getPoke(endpoint.charmander());
         Assert.assertEquals(poke.getID(), 4);
     }
+
     @Test
-    public void waterTest(){
+    public void waterTest() {
         poke.getPoke(endpoint.squirtle());
         Assert.assertEquals(poke.getID(), 7);
     }
+
     @Test
-    public void fireTest(){
+    public void fireTest() {
 
         poke.getPoke(endpoint.charmander()).then().statusCode(200);
         Assert.assertEquals(poke.getID(), 4);
@@ -34,10 +36,11 @@ public class TestingE2E {
         Assert.assertEquals(poke.getID(), 6);
 
     }
+
     @Test
-    public void seedTest(){
+    public void seedTest() {
         poke.getPoke(endpoint.bulbassauro());
-        Assert.assertEquals(poke.getID(),1);
+        Assert.assertEquals(poke.getID(), 1);
 
         poke.getPoke(endpoint.ivysaur());
         Assert.assertEquals(poke.getID(), 2);
@@ -47,9 +50,9 @@ public class TestingE2E {
     }
 
     @Test
-    public void eletricTest(){
+    public void eletricTest() {
         poke.getPoke(endpoint.pikachu());
-        Assert.assertEquals(poke.getID(),25);
+        Assert.assertEquals(poke.getID(), 25);
 
         poke.getPoke(endpoint.raichu());
         Assert.assertEquals(poke.getID(), 26);
@@ -59,9 +62,9 @@ public class TestingE2E {
     }
 
     @Test
-    public void legendaryTest(){
+    public void legendaryTest() {
         poke.getPoke(endpoint.zapdos());
-        Assert.assertEquals(poke.getID(),145);
+        Assert.assertEquals(poke.getID(), 145);
 
         poke.getPoke(endpoint.articuno());
         Assert.assertEquals(poke.getID(), 144);
@@ -71,9 +74,13 @@ public class TestingE2E {
     }
 
     @Test
-    public void dragonTest(){
+    public void dragonTest() {
         poke.getPoke(endpoint.generateEndPoint("dragonite"));
     }
 
+    @Test
+    public void serviceTest() {
+        poke.getPokemonService("lugia");
 
     }
+}
